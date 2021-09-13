@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Zhuye">
+
+    <com.hnucm18jr.devicemanage.Untils.CustomScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bbl"
+        />
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/bbl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/q9"
+            app:iconSelected="@mipmap/q1"
+            app:iconHeight="20dp"
+            app:iconWidth="20dp"
+            app:itemText="首页"
+
+            app:itemTextSize="10sp"
+
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/main"
+
+            />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:iconHeight="20dp"
+            app:iconWidth="20dp"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/q8"
+            app:iconSelected="@mipmap/q2"
+            app:itemText="设备"
+            app:itemTextSize="10sp"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/main"
+
+            />
+        <com.chaychan.library.BottomBarItem
+            android:id="@+id/center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:iconHeight="20dp"
+            app:iconWidth="20dp"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/sao"
+            app:iconSelected="@mipmap/sao"
+            app:itemText="扫一扫"
+            app:itemTextSize="10sp"
+
+            app:textColorNormal="@color/main"
+            app:textColorSelected="@color/main"
+
+            />
+
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:iconHeight="20dp"
+            app:iconWidth="20dp"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/q7"
+            app:iconSelected="@mipmap/q4"
+            app:itemText="收藏"
+            app:itemTextSize="10sp"
+
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/main"
+
+
+            />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/q6"
+            app:iconSelected="@mipmap/q5"
+            app:itemText="我的"
+            app:iconHeight="20dp"
+            app:iconWidth="20dp"
+            app:itemTextSize="9sp"
+
+
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/main"
+
+
+            />
+
+    </com.chaychan.library.BottomBarLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

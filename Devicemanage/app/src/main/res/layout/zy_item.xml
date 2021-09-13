@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+
+    android:layout_marginRight="@dimen/dp_20"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="@dimen/dp_20"
+        app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+
+
+
+<com.hnucm18jr.devicemanage.Untils.RadiusCardView
+    android:layout_width="50dp"
+    android:id="@+id/head_zy"
+    android:layout_height="50dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginLeft="@dimen/dp_10"
+    app:rcv_topLeftRadiu="3dp"
+    app:rcv_bottomLeftRadiu="3dp"
+    app:rcv_bottomRightRadiu="3dp"
+    app:rcv_topRightRadiu="3dp"
+    >
+    <ImageView
+        android:id="@+id/head_zy2"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/head"
+        android:scaleType="fitXY"/>
+</com.hnucm18jr.devicemanage.Untils.RadiusCardView>
+    <TextView
+        android:id="@+id/name_zy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="雷蛇键盘"
+       app:layout_constraintLeft_toRightOf="@id/head_zy"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toTopOf="@id/head_zy"
+        android:textSize="@dimen/sp_13"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/time_zy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3小时后到期"
+        app:layout_constraintLeft_toRightOf="@id/name_zy"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintBottom_toBottomOf="@id/name_zy"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/grey3"
+        app:layout_constraintTop_toTopOf="@id/name_zy"
+        />
+    <TextView
+        android:id="@+id/user_zy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="财政部安吉拉姚金波在用"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintTop_toBottomOf="@id/name_zy"
+        android:layout_marginTop="2dp"
+        app:layout_constraintLeft_toLeftOf="@id/name_zy"
+        android:textColor="@color/grey3"
+        android:layout_marginBottom="@dimen/dp_10"
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    app:cardCornerRadius="5dp"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_height="130dp">
+
+    <com.hnucm18jr.devicemanage.Untils.RadiusCardView
+        android:layout_width="match_parent"
+        app:rcv_topLeftRadiu="5dp"
+        app:rcv_topRightRadiu="5dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+
+
+            />
+    </com.hnucm18jr.devicemanage.Untils.RadiusCardView>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设备"
+        android:textSize="@dimen/sp_10"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:text="5天后到期"
+       android:layout_marginTop="100dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/grey3"
+        android:textSize="@dimen/sp_8"/>
+</androidx.cardview.widget.CardView>

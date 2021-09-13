@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerclass">
+        <item>感应不良</item>
+        <item>显示问题 </item>
+        <item>无法开机</item>
+        <item>电池损坏</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="spinnerclass2">
+        <item>急需使用</item>
+        <item>越快越好 </item>
+        <item>不急着用</item>
+        <item>可能需要</item>
+    </string-array>
+</resources>

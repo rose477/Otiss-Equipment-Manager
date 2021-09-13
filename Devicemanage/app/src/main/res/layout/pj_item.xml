@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hnucm18jr.devicemanage.Untils.CircleImageView
+        android:id="@+id/pj_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:src="@mipmap/headz"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/pj_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周小吕"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/pj_head"
+        app:layout_constraintLeft_toRightOf="@id/pj_head"
+        android:layout_marginLeft="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pj_time"
+        android:text="3分钟前"
+        app:layout_constraintTop_toBottomOf="@id/pj_name"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@id/pj_name"
+        android:textColor="@color/grey3"
+        />
+    <TextView
+        android:id="@+id/pj_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="唐小波你好，我可以借用你的惠普电脑吗"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintTop_toBottomOf="@id/pj_head"
+        app:layout_constraintLeft_toLeftOf="@id/pj_head"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

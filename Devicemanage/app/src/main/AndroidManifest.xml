@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hnucm18jr.devicemanage">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".Myapplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo5"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/logo5"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Shebei.FinishActivity3"></activity>
+        <activity android:name=".Wo.Finish2Activity" />
+        <activity android:name=".Wo.BuyActivity" />
+        <activity android:name=".Shebei.FinishActivity" />
+        <activity android:name=".Main.MessageActivity" />
+        <activity android:name=".Shebei.XiuActivity" />
+        <activity android:name=".sao.EndActivity" />
+        <activity android:name=".Shebei.EwmActivity" />
+        <activity android:name=".Wo.BaoxiuActivity" />
+        <activity android:name=".Type.TypeActivity" />
+        <activity android:name=".sao.ShebeiActivity" />
+        <activity
+            android:name=".Main.SearchActivity"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity android:name=".sao.QrCodeActivity" />
+        <activity android:name=".Zhuye">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login">
+
+
+        </activity>
+    </application>
+
+</manifest>
